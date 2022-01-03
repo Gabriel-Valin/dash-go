@@ -72,7 +72,7 @@ export default function Dashboard () {
             <Flex w='100%' my='6' maxWidth={1480} mx='auto' px='6'>
                 <Sidebar />
 
-                <SimpleGrid flex='1' gap='4' minChildWidth='320px' align='flex-start'>
+                <SimpleGrid flex="1" gap="4" minChildWidth={["320px","320px","320px"]} align="flex-start" m={["8","0","0"]}>
                     <Box p='8' bg='gray.800' borderRadius={8}>
                         <Text fontSize='lg' mb='4' >Inscritos da semana</Text>
                         <Chart
