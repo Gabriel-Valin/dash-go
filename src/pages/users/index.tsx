@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Button, Icon, Table, Thead, Th, Tr, Checkbox, Tbody, Td, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import { RiAddLine, RiEditLine, RiPencilLine } from "react-icons/ri";
 import { Header } from "../../components/Header";
 import { Pagination } from "../../components/Pagination";
@@ -18,9 +19,11 @@ export default function UserList () {
                             Usuários
                         </Heading>
 
-                        <Button as='a' size='sm' fontSize='small' colorScheme='pink' leftIcon={<Icon as={RiAddLine} />}>
-                            Criar novo
-                        </Button>
+                        <Link href='/users/create' passHref>
+                            <Button as='a' size='sm' fontSize='small' colorScheme='pink' leftIcon={<Icon as={RiAddLine} />}>
+                                Criar novo
+                            </Button>
+                        </Link>
                     </Flex>
                     <Table colorScheme='whiteAlpha'>
                         <Thead>
