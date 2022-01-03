@@ -1,6 +1,5 @@
-import { Box, Text, Link, Icon, Stack } from "@chakra-ui/react"
+import { Box, Text, Stack } from "@chakra-ui/react"
 import { ReactNode } from "react"
-import { RiContactsLine, RiDashboardLine } from "react-icons/ri"
 
 type SectionProps = {
     title: string
